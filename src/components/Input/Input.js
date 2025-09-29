@@ -8,6 +8,7 @@ function Input({ didGameOver, onChange, value }) {
         aria-disabled={didGameOver}
         disabled={didGameOver}
         id='guess-input'
+        title="5 letter word"
         pattern={`^\\w{${NUM_OF_LETTERS_ALLOWED},${NUM_OF_LETTERS_ALLOWED}}$`}
         type='text'
         onChange={onChange}
